@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: white;
+}
+.logo{
+    font-size: 30px;
+    width: 100px;
+    height: 56px;
+    float:left;
+    text-align: center;
+}
+.logo a{
+    line-height: 56px;
+    color: red;
+    text-decoration: none;
+}
+.leader{
+    margin-left: 60px;
+    float: left;
+}
+.leader ul{
+    list-style-type: none;
+}
+.leader ul li{
+    width: 64px;
+    height: 56px;
+    float: left;
+    text-align: center;
+}
+.leader ul li:hover{
+    background-color: gainsboro;
+}
+.leader a{
+    color: red;
+    text-decoration: none;
+    line-height: 56px;
+}
+.find {
+    margin-left: 50px;
+    float: left;
+    width: 175px;
+    height: 56px;
+    line-height: 56px;
+}
+.find input{
+    background-color: gainsboro;
+    width: 160px;
+    height: 38px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid gainsboro;
+    padding-left: 20px;
+    transition: width 1s;
+}
+#search{
+    color: gray;
+    position: relative;
+    top: -55px;
+    left: 135px;
+    transition:left 1s;
+}
+.btn-write{
+    width: 150px;
+    text-align: center;
+    height: 56px;
+    float: right;
+    line-height: 56px;
+}
+.write{
+    outline: none;
+    width: 100px;
+    background-color: firebrick;
+    color: white;
+    border: 1px solid firebrick;
+    line-height: 40px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.write:hover{
+    background-color: red;
+    border: 1px solid red;
+}
+#select{
+    width: 80px;
+    height: 56px;
+    float: right;
+    text-align: center;
+}
+#select:hover{
+    background-color: gainsboro;
+}
+#select img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.img{
+    position: absolute;
+    top: 15px;
+
+}
+.str{
+    width: 25px;
+    height: 56px;
+    line-height: 56px;
+    float: right;
+    font-size: 20px;
+}
+.str a{
+    text-decoration: none;
+    color: gray;
+}
+#list{
+    position: fixed;
+    z-index: 1;
+    right: 80px;
+    display: none;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-top: none;
+}
+#list ul{
+    list-style-type: none;
+}
+#list ul li{
+    width: 150px;
+    height: 40px;
+}
+#list ul li a{
+    line-height: 40px;
+    color: black;
+}
+#list ul li a:hover{
+    text-decoration: none;
+}
+#information{
+    position: fixed;
+    z-index: 1;
+    left: 287px;
+    display: none;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-top: none;
+}
+#information ul{
+    list-style-type: none;
+}
+#information ul li{
+    width: 150px;
+    height: 40px;
+}
+#information ul li a{
+    line-height: 40px;
+    color: black;
+}
+#information ul li a:hover{
+    text-decoration: none;
+}
+.fa-user,.fa-hourglass,.fa-heart,.fa-envelope,.fa-cog,
+.fa-comments-o,.fa-sign-out,.fa-comment-o,
+.fa-envelope-o,.fa-external-link,.fa-user-plus,
+.fa-money,.fa-envira{
+    color: red;
+    margin:0 10px;
+}
+.home:hover,.collect:hover,.like:hover,.money:hover,.set:hover,.info:hover,.exit:hover{
+    background-color: gainsboro;
+}
+#change{
+    position: fixed;
+    z-index: 1;
+    right: 210px;
+    display: none;
+    background-color: white;
+}
+.top{
+    color: gray;
+    height:100px;
+    width: 240px;
+    border-bottom: 1px solid gainsboro;
+    display: table;
+    text-align: center;
+}
+.top span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.top .btn-left-change{
+    margin-right: -5px;
+    border: 1px solid gainsboro;
+    width: 44px;
+    height: 41px;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 5px;
+}
+.top .btn-right-change{
+    color: white;
+    border: 1px solid dodgerblue;
+    width: 44px;
+    height: 41px;
+    background-color: dodgerblue;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-right: 5px;
+}
+.bottom{
+    height:120px;
+    width: 240px;
+    text-align: center;
+}
+.bottom .btn-left-change{
+    /*margin-right: -5px;*/
+    border: 1px solid gainsboro;
+    width: 100px;
+    height: 41px;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin:15px -5px 0 0;
+}
+.bottom .btn-right-change{
+    color: white;
+    border: 1px solid dodgerblue;
+    width: 100px;
+    height: 41px;
+    background-color: dodgerblue;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#extend{
+    background-color: white;
+    display: none;
+    color: darkgray;
+    position: fixed;
+    z-index: 1;
+    padding: 20px;
+    width: 220px;
+    left: 400px;
+}
+.fire{
+    overflow: hidden;
+}
+.fire-left{
+    float: left;
+}
+.fire-right{
+    float: right;
+}
+.fire-right:hover{
+    color: black;
+}
+#extend p button{
+    margin: 10px 0 0 3px;
+    border: 1px solid darkgray;
+    color: darkgray;
+    height: 20px;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+#extend p button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+#content{
+    width: 960px;
+    margin: 0 auto;
+}
+.carousel-inner{
+    height: 360px;
+    margin-top: 56px;
+}
+.carousel-inner .item img{
+    height: 360px;
+}
+
+#content-box{
+    margin-top: 20px;
+}
+.content-left{
+    float: left;
+    width: 60%;
+}
+.left-quick{
+    height: 140px;
+    border-bottom: 1px solid gainsboro;
+}
+.choose{
+    padding-top:20px;
+}
+.choose .must{
+    margin-left: 0;
+}
+.choose a{
+    background-color: gainsboro;
+    border: 1px solid gray;
+    color: black;
+    display: inline-block;
+    height: 34px;
+    border-radius: 5px;
+}
+.choose a:hover{
+    text-decoration: none;
+}
+.choose span{
+    margin-left: 25px;
+}
+.choose span img{
+    float: left;
+    width: 32px;
+    height: 32px;
+
+}
+.choose span div{
+    float: left;
+    height: 32px;
+    padding: 5px 8px;
+}
+.choose .more a{
+    color:grey;
+    background-color: white;
+    border: none;
+}
+.choose .fa-chevron-right{
+    margin-left: 8px;
+}
+.content-main{
+    border-bottom:1px solid gray;
+}
+.content-main .user-caption{
+    padding: 10px 0;
+}
+.content-main .user-caption img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.user-caption .user-name{
+    margin: 0 10px;
+}
+.user-caption .user-time{
+    color: gray;
+}
+.main-box .explain-content a{
+    color: black;
+    font-weight: bold;
+}
+.explain-content{
+    display: flex;
+}
+.explain-content .content-boss{
+    padding-right: 20px;
+    flex: 2;
+}
+.explain-content img{
+    width: 120px;
+    height: 120px;
+    flex: 1;
+}
+.content-footer{
+    margin-bottom: 10px;
+}
+.content-footer a{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    color: crimson;
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+.content-footer a:hover{
+    color: red;
+}
+.eyes,.saying,.love,.save-money{
+    color: gray;
+    margin-left: 10px;
+}
+.eyes:hover,.saying:hover,.love:hover,.save-money:hover{
+    color: black;
+}
+.fa-eye,.fa-commenting,.fa-heartbeat,.fa-usd{
+    padding-right: 5px;
+}
+.read-more{
+    margin-top: 30px;
+}
+.read-more a{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: grey;
+    color: white;
+    border-radius: 25px;
+}
+
+#footer{
+    margin-top: 50px;
+    height: 100px;
+    display: table;
+}
+.footer-conent{
+    display: table-cell;
+    vertical-align: middle;
+}
+.jianshu-link,.jianshu-from{
+    color: darkgray;
+}
+.jianshu-link a{
+    color: darkgray;
+    text-decoration: none;
+}
+.jianshu-from a{
+    color: darkgray;
+    text-decoration: none;
+}
+.jianshu-link a:hover{
+    color: black;
+}
+.jianshu-from a:hover{
+    color: black;
+}
+
+
+.content-right{
+    float: right;
+    width: 40%;
+}
+.content-right-box{
+    margin-left: 104px;
+}
+.hot-list ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+.hot-list a{
+    text-decoration: none;
+}
+.hot-list .new-one a{
+    background-color: rebeccapurple;
+}
+.hot-list .sever-days-new a{
+    background-color: orange;
+}
+.hot-list .one-month-new a{
+    background-color: crimson;
+}
+.hot-list .jianshu-version a{
+    background-color: #28a4c9;
+}
+.hot-list .jianshu-class a{
+    background-color: #9acfea;
+}
+.hot-list ul li a{
+    margin: 5px 0;
+    border-radius: 5px;
+    padding-left: 30px;
+    height: 50px;
+    width: 280px;
+    display: inline-block;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+}
+.hot-list ul li a .fa-chevron-right{
+    margin-left: 10px;
+}
+#download-box{
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+#download-box .icon-downloads{
+    float: left;
+}
+#download-box img{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+.download-right{
+    margin: 15px 0 0 103px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.download-right .fa-chevron-right{
+    margin-left: 10px;
+}
+.download-right .point-text{
+    color: gray;
+    font-size: 13px;
+}
+#big-icon{
+    display: none;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 560px;
+    right: 200px;
+    z-index: 1;
+}
+#big-icon img{
+    width: 180px;
+    height: 180px;
+}
+.jianshu-news{
+    margin: 25px 0;
+}
+.jianshu-daily span{
+    color: gray;
+}
+.jianshu-daily .old-news{
+    float: right;
+}
+.news-list,.connect-people{
+    overflow: hidden;
+    margin: 20px 0;
+}
+.news-list .news-left{
+    width: 60px;
+    float: left;
+}
+.news-left img{
+    width: 48px;
+    height: 48px;
+}
+.news-right{
+    width: 210px;
+    line-height: 24px;
+    float: left;
+}
+.news-right a{
+    color: black;
+}
+.check-people span{
+    color: gray;
+}
+.check-people .change-people{
+    float: right;
+    text-decoration: none;
+    color: gray;
+}
+.change-people:hover{
+    color: black;
+}
+.people-img{
+    width: 60px;
+    float: left;
+}
+.people-img img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.explain-people{
+    float: left;
+    line-height: 24px;
+}
+.connect-people a{
+    text-decoration: none;
+    float: right;
+    line-height: 48px;
+    color: red;
+}
+.star-name{
+    font-weight: bold;
+}
+.following{
+    color: gray;
+}
+.check-all button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+.check-all .fa-chevron-right{
+    margin-left: 10px;
+}
+
+#uptop{
+    position: fixed;
+    bottom: -100px;
+    right: 165px;
+}
+#uptop button{
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    outline: none;
+}
